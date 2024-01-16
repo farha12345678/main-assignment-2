@@ -6,24 +6,30 @@
 }
 
 /* nav section */
+.travel {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
 .nav-sec {
     display: flex;
-
 }
 
-nav>ul {
-    display: flex;
-
-}
-
-nav li a {
+.navbar a {
     text-decoration: none;
-
+    padding-left: 5px;
 }
+
+
+
 
 /* banner section */
 .container {
-    width: 80%;
+    max-width: 80%;
     height: 500px;
     border-radius: 16px;
     background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("banner.png");
@@ -34,7 +40,7 @@ nav li a {
 
 .banner-title {
     color: #FFF;
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: 800;
     text-align: center;
     padding-top: 100px;
@@ -44,7 +50,7 @@ nav li a {
 .banner-description {
     color: #FFF;
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 26px;
 
@@ -78,6 +84,7 @@ div>input {
 
 .search {
     border-radius: 8px;
+background: #FF5400;
 
 }
 
@@ -96,12 +103,21 @@ button>img {
     gap: 100px;
 }
 
+.mountain {
+    width: 540px;
+    height: 550px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    margin-right: 100px;
+}
+
 .popular {
     color: #131318;
     padding-left: 50px;
     padding-right: 50px;
     font-family: Mulish;
-    font-size: 40px;
+    font-size: 2.5rem;
 
     font-weight: 800;
 
@@ -110,7 +126,7 @@ button>img {
 .popular-des {
     color: rgba(19, 19, 24, 0.70);
 
-    font-size: 16px;
+    font-size: 1rem;
     padding-left: 50px;
     padding-right: 50px;
 
@@ -122,7 +138,7 @@ button>img {
 .popular-list {
     color: rgba(19, 19, 24, 0.70);
 
-    font-size: 16px;
+    font-size: 1rem;
     padding-left: 50px;
     padding-right: 50px;
 
@@ -134,7 +150,7 @@ button>img {
 .popular-content {
     color: #5A5A5D;
 
-    font-size: 16px;
+    font-size: 1rem;
     padding-left: 50px;
     padding-right: 50px;
     font-weight: 400;
@@ -146,7 +162,7 @@ button>img {
     color: #FFF;
     text-align: center;
     border: 0px;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-left: 50px;
     font-weight: 800;
     width: 174px;
@@ -160,7 +176,7 @@ button>img {
     color: #131318;
     text-align: center;
     margin-top: 130px;
-    font-size: 40px;
+    font-size: 2.5rem;
 
     font-weight: 800;
 
@@ -170,7 +186,7 @@ button>img {
     color: rgba(19, 19, 24, 0.70);
     text-align: center;
     margin-top: 5px;
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 50px;
     font-weight: 400;
     line-height: 26px;
@@ -178,16 +194,28 @@ button>img {
 }
 
 .country-img {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 16px;
+    padding-left: 100px;
+    padding-right: 50px;
+    max-width: auto;
+    margin-bottom: 20px;
+}
+
+.country-img-middle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     border-radius: 16px;
     padding-left: 100px;
     padding-right: 50px;
     gap: 20px;
     margin-bottom: 20px;
-
-
+    max-width: auto;
 
 }
+
+
 
 /* main section */
 .main-content {}
@@ -196,7 +224,7 @@ button>img {
     color: #131318;
     text-align: center;
     font-family: Mulish;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
@@ -206,7 +234,7 @@ button>img {
     color: rgba(19, 19, 24, 0.70);
     text-align: center;
     font-family: Mulish;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
@@ -215,30 +243,31 @@ button>img {
 
 .title {
     color: #131318;
-    
-    font-size: 24px;
-    
+
+    font-size: 1.5rem;
+
     font-weight: 800;
-    
+    padding-left: 20px;
+
 }
 
 .title-des {
     color: #5A5A5D;
-   
-    font-size: 16px;
-    
+
+    font-size: 1rem;
+    padding-left: 20px;
     font-weight: 400;
     line-height: 26px;
-    /* 162.5% */
+
 }
 
 .hotels>img {
     width: 64px;
     height: 64px;
-    
+
     padding-left: 20px;
     padding-top: 10px;
-    
+
 }
 
 .service>img {
@@ -246,7 +275,7 @@ button>img {
     height: 64px;
     padding-left: 20px;
     padding-top: 10px;
-    
+
 }
 
 .pricing>img {
@@ -254,11 +283,11 @@ button>img {
     height: 64px;
     padding-left: 20px;
     padding-top: 10px;
-    
+
 }
 
 .hotels {
-    width: 573px;
+    max-width: 576px;
     height: 284px;
     flex-shrink: 0;
     border-radius: 16px;
@@ -267,7 +296,7 @@ button>img {
 }
 
 .service {
-    width: 573px;
+    max-width: 576px;
     height: 284px;
     flex-shrink: 0;
     border-radius: 16px;
@@ -276,7 +305,7 @@ button>img {
 }
 
 .pricing {
-    width: 573px;
+    max-width: 576px;
     height: 284px;
     flex-shrink: 0;
     border-radius: 16px;
@@ -284,23 +313,221 @@ button>img {
     background: rgba(233, 68, 68, 0.05);
     margin: auto;
     margin-top: 20px;
-    
-    
+
+
 }
-.parent{
+
+.parent {
     display: flex;
     padding-left: 100px;
     padding-right: 100px;
     gap: 20px;
 }
 
-/* responsive */
+/* newsletter section */
+.last-content {
+    display: flex;
+    margin-top: 130px;
+}
+
+.full-sec {
+    max-width: 474px;
+    height: 422px;
+    margin-left: 50px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+}
+
+.last-img {
+    max-width: 600px;
+    height: 422px;
+    border-radius: 16px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.form input {
+    width: 393px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    margin-top: 10px;
+    border: 0px;
+}
+
+.submit {
+    color: #FFF;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 1.25rem;
+    margin-top: 10px;
+    border: 0px;
+    font-weight: 800;
+
+    width: 393px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FF5400;
+}
+
+.logo {
+    width: 300px;
+    height: 120px;
+    transform: rotate(-19.628deg);
+    border-radius: 16px;
+    background: #FF5400;
+    margin-left: 900px;
+    margin-top: -200px;
+
+}
+
+.logo-para {
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.logo-title {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+}
+
+/* footer section */
+footer {
+    max-width: 1440px;
+    height: 502px;
+    flex-shrink: 0;
+    background: rgba(19, 19, 24, 0.05);
+    margin-top: 130px;
+
+
+}
+
+.last-head {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.orange {
+    color: #FF5400;
+
+    font-size: 2rem;
+
+    font-weight: 800;
+
+}
+
+.icon-title {
+    color: var(--Dark-01, #131318);
+
+    font-size: 2rem;
+
+    font-weight: 800;
+
+}
+
+.icon-para {
+    color: #5A5A5D;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+.main-icon {
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.copy {
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+
+
+/* responsive mobile */
 @media screen and (max-width:600px) {
     .features {
         flex-direction: column;
+    }
+
+    .main-content,
+    .main-content,
+    .parent {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 0px;
 
     }
 
-    .mountain {}
+    .pricing {
+        padding-left: 0px;
+    }
 
+    .last-content {
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        padding-left: 0px;
+        gap: 20px;
+
+    }
+
+    .logo {
+        margin-left: 350px;
+    }
+
+    .last-img,
+    .full-sec {
+        margin-left: 0px;
+
+    }
+
+    .banner-title {
+        font-size: 2rem;
+        padding-top: 5px;
+    }
+
+    .banner-description {
+        padding-top: 0px;
+    }
+
+    .banner-main {
+        flex-direction: column;
+        margin-top: 5px;
+        margin-right: 50px;
+    }
+
+    .country-img-middle,
+    .country-img {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 0px;
+        padding-right: 0px;
+        gap: 5px;
+        max-width: auto;
+
+    }
 }
