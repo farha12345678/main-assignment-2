@@ -76,22 +76,37 @@
 div>input {
     width: 174px;
     height: 52px;
-    flex-shrink: 0;
+    margin-left: 10px;
+
     border-radius: 8px;
     border: #FFF;
 }
 
-
 .search {
+    color: #FFF;
+    
+    font-family: Mulish;
+    font-size: 16px;
+    
+    font-weight: 700;
+    
     border-radius: 8px;
-background: #FF5400;
-
+    background-color: #FF5400;
+    width: 174px;
+    height: 52px;
+    
 }
 
-button>img {
+
+
+ .search>img {
     height: 24px;
     width: 24px;
-    margin-left: -100px;
+    margin-left: -50px;
+    
+    
+    
+    
 
 
 }
@@ -342,7 +357,7 @@ button>img {
 }
 
 .last-img {
-    max-width: 600px;
+    max-width: 100%;
     height: 422px;
     border-radius: 16px;
     margin-left: 100px;
@@ -502,12 +517,13 @@ footer {
     .last-img,
     .full-sec {
         margin-left: 0px;
-
+       padding: 5px;
     }
 
     .banner-title {
         font-size: 2rem;
         padding-top: 5px;
+
     }
 
     .banner-description {
@@ -516,8 +532,12 @@ footer {
 
     .banner-main {
         flex-direction: column;
-        margin-top: 5px;
+       margin-top: 10px;
         margin-right: 50px;
+        
+    }
+    .form-main>input {
+        margin-bottom: 10px;
     }
 
     .country-img-middle,
@@ -530,4 +550,5 @@ footer {
         max-width: auto;
 
     }
+    
 }
